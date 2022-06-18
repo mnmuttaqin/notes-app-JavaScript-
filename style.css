@@ -1,0 +1,382 @@
+
+/*  fonts */
+@font-face{
+font-family: "Raleway-regular";
+src: url(/fonts/Raleway-Regular.ttf);
+}
+@font-face{
+    font-family: "Raleway-medium";
+    src: url(/fonts/Raleway-Medium.ttf);
+    }
+   @font-face{
+        font-family: "Raleway-bold";
+        src: url(/fonts/Raleway-Bold.ttf);
+        }
+
+        @font-face{
+            font-family: "Raleway-regular";
+            src: url(/fonts/Raleway-Regular.ttf);
+            }
+            @font-face{
+                font-family: "Raleway-semibold";
+                src: url(/fonts/Raleway-SemiBold.ttf);
+                }
+                @font-face{
+                    font-family: "Raleway-black";
+                    src: url(/fonts/Raleway-Black.ttf);
+                    }
+                    @font-face{
+                        font-family: "Raleway-extrabold";
+                        src: url(/fonts/Raleway-ExtraBold.ttf);
+                        }
+body{
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: lightcoral;
+ 
+
+}
+#btnDiv button{
+margin: 10px;
+}
+#mainDiv{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	gap: 10px;
+}
+.button{
+border: none;	
+
+background-color: lightcoral;
+height: 45px;
+border-radius: 5px 15px;
+width: 130px;
+	max-width: 600px;
+	margin: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: white;
+font-family: Monospace;
+text-shadow: 0 0 3px silver;
+font-style: italic;
+}
+.notesview{
+	margin-top: 15px;
+	max-width: 600px;
+ margin: auto;
+height: 150px;	
+width: 200px;
+border: 4px solid lightcoral;
+border-radius: 10px;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+position:relative;
+background-color: #ffffff;
+
+}
+.notesviewInput{
+	margin-top: 15px;
+	max-width: 600px;
+ margin: auto;
+height: 200px;	
+width: 200px;
+border: 4px solid lightcoral;
+border-radius: 10px;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+position:relative;
+background-color: #ffffff;
+}
+
+#inputBody{
+	height: 140px;
+	width: 194px;
+border: none;
+    outline: none;
+    font-weight: bold;
+   font-family: Courier;
+   text-align: center;
+}
+#inputBody1{
+	height: 140px;
+	width: 194px;
+border: none;
+    outline: none;
+    font-weight: bold;
+   font-family: Courier;
+   text-align: center;
+
+}
+/*will be removed*/
+#inputTitle{
+	height: 40px;
+	width: 200;
+	margin-top: 3px;
+	border-radius: 5px;
+	margin-left: 2px;
+	border: none;
+	font-weight: bold;
+	font-family: Sans-Serif;
+}
+#inputTitle1{
+	height: 40px;
+	width: 200;
+	margin-top: 3px;
+	border-radius: 5px;
+	margin-left: 2px;
+	border: none;
+	font-weight: bold;
+	font-family: Sans-Serif;
+}
+
+
+
+/* now the note view design*/
+.notes-title{
+height: 40px;
+width: 200;	
+padding: 5px;
+font-family: Monospace;
+margin-top: 5px;
+font-weight: bold;
+	font-size: 16px;
+
+
+}
+
+.notes-body{
+	
+height: 140px;
+	width: 193px;
+padding: 5px;
+	font-family: Courier ;
+	font-weight: bold;
+	text-align: justify;
+	word-spacing: -4.5px;
+}
+.time{
+	position: absolute;
+	bottom: 0px;
+	left: 51px;
+
+}
+
+.__inp{
+	background-color: white;
+
+}
+.-hide{
+	display: none;
+}
+.notes-control {
+	word-wrap: break-word;
+font-weight: bold;
+color: black;
+}
+.notes-control-title{
+	word-wrap: break-word;
+}
+
+/* more features adding
+ */
+ .notes-read{
+ 	
+left: 15em;
+	position: absolute;
+	top: 100px;
+	height: 28em;
+	width: 18em;
+	background-color: white;
+	border:0.5rem solid lightcoral;
+border-radius: 0.7rem; 
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow-y: scroll;
+	
+}
+
+.body-read{
+		word-wrap: break-word;
+		text-align: justify;
+		padding: 0.6rem;
+		
+		font-family: Sans-Serif;
+		font-weight: 350;
+		font-size: 20px;
+		
+
+}
+.title-read{
+		word-wrap: break-word;
+		font-style: italic;
+		font-weight: 900;
+		font-size: 2.5rem;
+		padding: 0.6rem;
+		
+}
+
+.controller{
+
+display: flex;
+	margin: 5px;
+	justify-content: space-around;
+	
+}
+.controller button{
+	border: none;
+  color: white;
+  background-color: lightcoral;
+height: 2rem;
+width:8rem;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+font-family: Sans-Serif;
+
+}
+#crossbtn{
+	border: none;	
+display: block;
+background-color: lightcoral;
+height: 45px;
+border-radius: 5px;
+width: 130px;
+	max-width: 600px;
+	margin: auto;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: white;
+font-family: Monospace;
+text-shadow: 0 0 3px silver;
+font-style: italic;
+}
+
+/*input task*/
+
+.-hide-{
+	display: none;
+	
+}
+/*	height: 28em;
+	width: 17em;*/
+
+#note-edit-fun-title{
+	height: 5em;
+	width: 8.7em;
+			font-size: 2rem;
+			
+	border-radius: 5px;
+	margin-left: 2px;
+	border: none;
+	outline: none;
+	font-weight: 900;
+	font-family: Sans-Serif;
+	font-style: italic;
+		word-wrap: break-word;
+	
+}
+/* height: 28em;
+	width: 17em; */
+#note-edit-fun-body{
+	height: 17em;
+	width:14.2em ;
+
+border: none;
+    outline: none;
+word-wrap: break-word;
+		text-align: justify;
+		
+		font-family: Sans-Serif;
+		font-weight: 350;
+		font-size: 20px;
+	
+}
+
+#deleteBtn{
+	
+	border: none;	
+display: block;
+background-color: lightcoral;
+height: 45px;
+border-radius: 5px 15px;
+width: 130px;
+	
+	
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: white;
+font-family: Monospace;
+text-shadow: 0 0 3px silver;
+font-style: italic;
+}
+
+.navbar{
+	display: flex;
+justify-content: space-between;
+z-index: 10;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+height: 4rem;
+width: auto;
+background-color: lightcoral;
+margin-bottom: 1rem;
+	box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo{ /*logo comtainer*/  
+	padding: 0.5rem;
+	margin-left: 0.5rem;
+	
+	
+}
+.my-name{
+	font-family: "Raleway-extrabold"; 	
+	color: white;
+	
+}
+.notes-logo{
+font-size: 2rem;
+color: white;
+font-family: "Raleway-Bold";
+}
+
+.button-position button {
+	margin: 0.5rem;
+	
+
+}
+
+.button-position{
+
+}
+ul{
+	list-style-type: none;
+}
+#input-color{
+	
+height: 1.4rem;
+width:7.5rem;
+background-color:white;
+border: none;
+outline: none;
+position: absolute;
+right: 5.1rem;
+}
+
+
+#input-color{
+	background-color: #dddeee;
+	
+	
+}
+
+/* .test{
+	background-color: red;
+	height:100;
+	width: auto;
+	z-index: 100000;
+	
+} */

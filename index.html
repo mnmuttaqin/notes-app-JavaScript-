@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notes App</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<style type="text/css" media="all">
+
+	</style>
+</head>
+<body>
+	<div class="test">
+		
+	<div class="navbar" id="navbar">
+	<div class="logo">
+			<h3 > <span  class="notes-logo">NOTES </span> <span class="my-name"> <small>APP By Muttaqin Muhammad </small></span></h3>
+		</div>
+	<div class="button-position">
+		
+						<button class="button" id="addNoteBtn">Add a Note</button>
+	</div>
+		
+	
+	
+		</div>
+		
+	<div id="mainDiv">
+
+
+		<div id="btnDiv">
+
+
+			<button class="button -hide" id="saveNoteBtn">save Note</button>
+			<button class="button -hide" id="deleteNoteBtn">delete</button>
+		</div>
+
+
+		<div id="notesview" class="notesviewInput -hide __inp">
+			<input type="text"  name="inputTitle" id="inputTitle" placeholder="Enter a title..." />
+
+
+			<textarea  placeholder="Enter your note..." name="inputBody" id=inputBody rows="8" cols="40"></textarea>
+		</div>
+
+
+		<div id="note-show">
+  <div class="buttons-positions">
+  	
+  	<button class="" id="crossbtn">Exit note</button>
+       <button id="deleteBtn">Delete Note</button>
+	</div>
+		
+			<div class="notes-read -hide" id="notes-read-tab">
+
+				<div id="notes-read-title" class="title-read">
+
+				</div>
+				<div class="body-read" id="notes-read-body">
+
+				</div>
+
+				<div class="controller">
+					<input type="image" class="-hide" name="" id="" />
+					<button  id="customize-theme-btn" class="-hide">customize theme</button>
+					
+						
+						<button id="Default-theme-btn" >Default theme</button>
+						<input type="text" name="" class="-hide-" id="input-color" value="#ffffff" />
+				
+			</div>
+
+		</div>
+		<!--
+				notes input append -->
+
+
+		<div class="notes-read -hide " id="notes-read">
+					<textarea type="text" class="copyinput" name="title-input" id="note-edit-fun-title" ></textarea> 
+					<textarea class="copyBody" name="bodyInput" id="note-edit-fun-body" rows="8" cols="40"></textarea>
+					</div>
+	</div>
+	</div>
+	
+	</div>
+	<script src="javaScript.js"></script>
+</body>
+</html>
