@@ -71,6 +71,7 @@ function showToDom() {
 	});
 
 showColorToDom()
+
 }
 
 //only for one time use
@@ -98,6 +99,7 @@ addNoteBtn.addEventListener("click", function() {
 	inputBody.value = "";
 
 	inputTitle.focus();
+	window.location.reload()
 })
 
 
@@ -109,8 +111,10 @@ crossbtn.addEventListener("click", function(){
 	crossbtn.style.display = "none"
 	deleteBtn.style.display = "none"
 notesRead.style.background = "white"
-showColorToDom()
-	
+
+setTimeout(()=>{
+	window.location.reload()
+},1000)	
 })
 
 
@@ -124,6 +128,9 @@ addNoteBtn.addEventListener("dblclick", function() {
 inputBody.addEventListener('keypress', function(e) {
 	if (e.key === "Enter") {
 		saveNoteBtn.click();
+		setTimeout(()=>{
+	window.location.reload()
+},1000)	
 	}
 })
 
@@ -154,6 +161,9 @@ saveNoteBtn.addEventListener("click", function(e) {
 		localStorage.setItem('muttaqin-notes', JSON.stringify(noteList));
 		notesview.classList.add("-hide");
 		showToDom();
+		setTimeout(()=>{
+	window.location.reload()
+},1000)	
 	}
 })
 //handle note delete.
@@ -165,6 +175,7 @@ colorsList.forEach((colorProfile)=>{
 		colorsList.splice(index, 1)
 		localStorage.setItem("muttaqin-colors", JSON.stringify(colorsList))
 		showColorToDom()
+		
 	}
 	
 })
@@ -225,11 +236,7 @@ function editNoteInfo(){
 	textarea1.id = "note-edit-fun-title"
 	let textarea2 = document.createElement('textarea')
 	textarea2.id = "note-edit-fun-body"
-	// 	<div class="notes-read ">
-	// 				<textarea type="text" class="copyinput" name="title-input" id="note-edit-fun-title" ></textarea> 
-	// 				<textarea class="copyBody" name="bodyInput" id="note-edit-fun-body" rows="8" cols="40"></textarea>
-	// 				</div>
-	// </div>
+
 		div.appendChild(textarea1);
 	div.appendChild(textarea2);
 	return div
@@ -254,58 +261,17 @@ crossbtn.addEventListener("click", function(){
 			setTimeout(function() {
 				showToDom()
 			}, 300);
+			
+setTimeout(()=>{
+	window.location.reload()
+},1000)	
+	
+	
 })
 
 })
  
 
-//test field
-
-// deleteing note  functionality
-
-
-
-
-// ;[...main.children].forEach((node)=> {
-// 	if (node.dataset.noteId !== undefined) {
-
-		
-// 		node.addEventListener('dblclick', function() {
-			
-			
-// 		})
-// 	}
-
-
-// })
-
-
-
-
-/*let saved = noteList[node.dataset.noteId].title;
-			let save = noteList[node.dataset.noteId].body;
-			node.innerHTML = "";
-			node.style.background = 'white';
-			node.appendChild(inp());
-			node.children[0].children[1].focus();
-			node.children[0].children[0].value = saved.trim();
-			node.children[0].children[1].value = save.trim(); 
-			[...node.children[0].children].forEach((inp)=> {
-				inp.addEventListener('keypress', function(e) {
-					if (e.key === "Enter") {
-						noteList[node.dataset.noteId].title = node.children[0].children[0].value
-						noteList[node.dataset.noteId].body = node.children[0].children[1].value
-
-						localStorage.setItem('muttaqin-notes', JSON.stringify(noteList))
-
-						showToDom()
-
-					}
-				})
-			})
-*/
-
-// 
 
 let colorCustomizeBtn = document.getElementById('Default-theme-btn')
 let notetitle = document.getElementById('notes-read-title')
